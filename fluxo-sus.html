@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f5f8f7">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="description" content="Entenda como Atenção Básica, SAMU, regulação, hospital de referência e reabilitação se articulam no fluxo do AVC no SUS.">
+  <title>Fluxo do SUS — NeuroConecta</title>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="apple-touch-icon" href="icons/neuroconecta-180.png">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="fluxo-sus.css">
+  <script src="fluxo-sus.js" defer></script>
+  <script src="pwa.js" defer></script>
+</head>
+<body class="flow-page">
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+  <header class="site-header">
+    <a class="brand" href="index.html#inicio" aria-label="NeuroConecta — página inicial">
+      <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 48 48"><path d="M24 5 42 15v18L24 43 6 33V15L24 5Z"/><path d="M24 14v20M14 24h20M16.9 16.9l14.2 14.2m0-14.2L16.9 31.1"/></svg></span>
+      <span class="brand-name">neuro<span>conecta</span><small>cuidado em rede</small></span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="mainNav" aria-label="Abrir menu">☰</button>
+    <nav id="mainNav" class="main-nav" aria-label="Navegação principal">
+      <a href="index.html#projeto">O projeto</a>
+      <a href="index.html#jornada">Linha de cuidado</a>
+      <a href="fluxo-sus.html" aria-current="page">Fluxo do SUS</a>
+      <a href="index.html#solucao">A solução</a>
+      <a href="contatos.html">Contatos</a>
+      <a href="instalar.html">Instalar no celular</a>
+      <a class="nav-cta" href="acesso.html">Acessar portal <span aria-hidden="true">↗</span></a>
+    </nav>
+  </header>
+
+  <main id="conteudo">
+    <section class="flow-hero section-wrap">
+      <div class="flow-hero-copy">
+        <div class="eyebrow"><span class="eyebrow-dot"></span> Linha de cuidado do AVC no SUS</div>
+        <h1>Do primeiro sinal<br>à <span>reabilitação.</span></h1>
+        <p class="hero-lead">O cuidado acontece em rede: Atenção Básica, urgência, serviços hospitalares e reabilitação têm papéis diferentes — e precisam trocar informações para que a pessoa não se perca nas transições.</p>
+        <div class="hero-actions"><a class="button button-primary" href="#mapa-fluxo">Explorar o fluxo <span aria-hidden="true">↓</span></a><a class="text-link" href="index.html">Voltar ao projeto <span aria-hidden="true">↗</span></a></div>
+      </div>
+      <aside class="flow-hero-card" aria-label="Visão resumida do fluxo assistencial">
+        <span class="flow-card-kicker">A REDE EM MOVIMENTO</span>
+        <div class="mini-flow"><div><span class="mini-flow-icon">⌂</span><b>Atenção Básica</b><small>previne e acompanha</small></div><i aria-hidden="true">→</i><div><span class="mini-flow-icon urgent">✳</span><b>Urgência</b><small>acolhe e regula</small></div><i aria-hidden="true">→</i><div><span class="mini-flow-icon rehab">↗</span><b>Reabilitação</b><small>apoia a recuperação</small></div></div>
+        <p>Com planejamento de alta, referência e contrarreferência, a jornada volta a se conectar à equipe de referência no território.</p>
+      </aside>
+    </section>
+
+    <section class="urgent-callout section-wrap" aria-labelledby="alerta-title">
+      <div class="urgent-symbol" aria-hidden="true">!</div>
+      <div><span class="callout-label">SUSPEITA DE AVC É URGÊNCIA</span><h2 id="alerta-title">Sinais súbitos? Acione ajuda imediatamente.</h2><p>Fraqueza ou formigamento de um lado do corpo, dificuldade para falar ou compreender, alteração visual ou perda súbita do equilíbrio podem ser sinais de alerta. Não espere uma consulta de rotina.</p></div>
+      <a class="phone-link" href="tel:192"><span>Acionar SAMU</span><b>192</b></a>
+    </section>
+
+    <section class="flow-map-section" id="mapa-fluxo">
+      <div class="section-wrap">
+        <div class="section-kicker light-kicker">01 — Visão geral do percurso</div>
+        <div class="flow-map-heading"><h2>Três frentes.<br><span>Um cuidado conectado.</span></h2><p>Este é um mapa conceitual. A porta de entrada, a regulação e os serviços disponíveis variam conforme a rede regional pactuada.</p></div>
+        <div class="flow-map" aria-label="Fluxo conceitual: Atenção Básica, urgência hospitalar, transição de alta, reabilitação e retorno ao acompanhamento na Atenção Básica.">
+          <article class="flow-node node-primary"><span class="flow-node-number">01</span><span class="flow-node-icon">⌂</span><span class="flow-node-label">ANTES E DEPOIS DO EVENTO</span><h3>Atenção Básica</h3><p>Previne, acompanha condições crônicas e retoma o seguimento após a alta.</p><span class="node-pill">EQUIPE DE REFERÊNCIA NO TERRITÓRIO</span></article>
+          <div class="flow-connector connector-emergency"><span>suspeita de AVC</span><i aria-hidden="true">→</i></div>
+          <article class="flow-node node-emergency"><span class="flow-node-number">02</span><span class="flow-node-icon">✳</span><span class="flow-node-label">RESPOSTA AO EVENTO AGUDO</span><h3>Urgência e hospital de referência</h3><p>SAMU, portas de urgência, regulação e hospital articulam avaliação e atendimento segundo a rede local.</p><span class="node-pill">ACESSO OPORTUNO E REGULADO</span></article>
+          <div class="flow-connector connector-transition"><span>alta planejada<br>+ referência</span><i aria-hidden="true">→</i></div>
+          <article class="flow-node node-rehabilitation"><span class="flow-node-number">03</span><span class="flow-node-icon">↗</span><span class="flow-node-label">RECUPERAÇÃO E PARTICIPAÇÃO</span><h3>Reabilitação</h3><p>Avaliação e plano individual conforme necessidades, com articulação entre serviços e família.</p><span class="node-pill">CONTINUIDADE E AUTONOMIA</span></article>
+          <div class="flow-return" aria-hidden="true"><span>contrarreferência · informações de alta · seguimento longitudinal</span><i></i></div>
+        </div>
+        <p class="flow-map-caption"><b>Fluxo contínuo:</b> a Atenção Básica continua fazendo parte do cuidado durante a urgência e a reabilitação — não é apenas a primeira etapa.</p>
+      </div>
+    </section>
+
+    <section class="flow-details section-wrap">
+      <div class="section-kicker">02 — O papel de cada ponto</div>
+      <div class="flow-detail-grid">
+        <article class="detail-card detail-primary"><div class="detail-card-top"><span class="detail-icon">⌂</span><span class="detail-number">ETAPA 01</span></div><h2>Atenção Básica<br><span>prevenção e coordenação</span></h2><p class="detail-intro">A UBS e as equipes de Saúde da Família acompanham a pessoa no território antes do evento e ajudam a recompor o cuidado após a alta.</p><div class="detail-subsection"><h3>Antes de um evento agudo</h3><ul><li>Acompanhar fatores de risco e condições crônicas conforme o plano de cuidado.</li><li>Promover ações de saúde e orientar sobre sinais de alerta e a busca imediata de urgência.</li><li>Manter vínculo com a pessoa, família e rede comunitária.</li></ul></div><div class="detail-subsection"><h3>Quando há suspeita ou após a alta</h3><ul><li>Em suspeita de AVC, a resposta deve ser imediata: acionar a urgência; não aguardar agendamento na UBS.</li><li>Receber informações de alta/contrarreferência conforme o fluxo local e organizar o seguimento no território.</li><li>Reconciliar o plano de cuidado com a equipe responsável, apoiar autocuidado e articular encaminhamentos necessários.</li></ul></div><div class="role-note"><b>Conexão-chave</b><span>Informação de alta e plano de seguimento retornam à equipe de referência, respeitando a organização local.</span></div></article>
+
+        <article class="detail-card detail-emergency"><div class="detail-card-top"><span class="detail-icon">✳</span><span class="detail-number">ETAPA 02</span></div><h2>Urgência<br><span>resposta coordenada</span></h2><p class="detail-intro">A Rede de Atenção às Urgências articula diferentes portas e serviços para organizar acolhimento, transporte, regulação e acesso ao cuidado hospitalar adequado.</p><div class="urgent-route"><div><b>1</b><span><strong>Acionamento</strong><small>Em sinais súbitos, SAMU 192 ou serviço de urgência, conforme a situação e a rede local.</small></span></div><div><b>2</b><span><strong>Avaliação e comunicação</strong><small>Atendimento pré-hospitalar/porta de urgência e troca de informações com a regulação.</small></span></div><div><b>3</b><span><strong>Encaminhamento regulado</strong><small>UPA ou pronto-socorro podem acolher e estabilizar; a regulação direciona para referência hospitalar quando necessário.</small></span></div><div><b>4</b><span><strong>Atendimento hospitalar</strong><small>Unidade de referência avalia e conduz o caso conforme protocolos clínicos e recursos disponíveis.</small></span></div></div><div class="role-note"><b>Conexão-chave</b><span>Transporte e unidade receptora precisam se comunicar; o cartão NeuroConecta seria apoio informativo, nunca substituto de avaliação ou prontuário.</span></div></article>
+
+        <article class="detail-card detail-rehab"><div class="detail-card-top"><span class="detail-icon">↗</span><span class="detail-number">ETAPA 03</span></div><h2>Reabilitação<br><span>plano individual e continuidade</span></h2><p class="detail-intro">Após a fase hospitalar, necessidades funcionais e contexto de vida orientam a continuidade do cuidado e a escolha dos serviços da rede.</p><div class="detail-subsection"><h3>Organizar a transição</h3><ul><li>Planejar a alta com orientações e encaminhamentos compatíveis com as necessidades identificadas pela equipe.</li><li>Compartilhar, pelos canais institucionais adequados, resumo assistencial e plano de seguimento com a equipe de referência.</li><li>Orientar paciente e família sobre os próximos contatos e serviços de referência locais.</li></ul></div><div class="detail-subsection"><h3>Conectar serviços de reabilitação</h3><ul><li>Articular reabilitação hospitalar ou ambulatorial e, quando indicado, atenção domiciliar.</li><li>O CER é um ponto especializado ambulatorial da rede; acesso e encaminhamento seguem a regulação local.</li><li>A UBS mantém o acompanhamento longitudinal e se articula com a reabilitação e os demais serviços.</li></ul></div><div class="role-note"><b>Conexão-chave</b><span>Paciente e família participam do plano de cuidado; a comunicação entre equipe hospitalar, reabilitação e Atenção Básica reduz rupturas.</span></div></article>
+      </div>
+    </section>
+
+    <section class="handoff-section">
+      <div class="section-wrap handoff-grid"><div><div class="section-kicker light-kicker">03 — Transições mais seguras</div><h2>Informação útil precisa <span>acompanhar a pessoa.</span></h2><p>Na passagem entre serviços, uma transferência de cuidado clara ajuda a evitar que pacientes e familiares tenham de reconstruir sozinhos toda a história.</p><a class="button button-primary" href="index.html#portal">Ver o cartão e o portal demo <span aria-hidden="true">↗</span></a></div><div class="handoff-card"><span class="handoff-kicker">NA REFERÊNCIA E CONTRARREFERÊNCIA</span><div class="handoff-item"><span>01</span><div><b>Resumo do atendimento</b><small>O que ocorreu e quais serviços já participaram.</small></div></div><div class="handoff-item"><span>02</span><div><b>Plano de continuidade</b><small>Orientações, encaminhamentos e próximos contatos definidos pela equipe.</small></div></div><div class="handoff-item"><span>03</span><div><b>Informações essenciais</b><small>Dados necessários para a transição, compartilhados por canal autorizado.</small></div></div><div class="handoff-item"><span>04</span><div><b>Retorno para a equipe de referência</b><small>Contrarreferência para seguimento no território e coordenação do cuidado.</small></div></div><p class="handoff-privacy">Informações de saúde são dados pessoais sensíveis. O compartilhamento real exige base legal, finalidade definida, acesso restrito e proteção adequada — esta página não coleta nem transmite dados.</p></div></div>
+    </section>
+
+    <section class="local-variation section-wrap"><span class="variation-icon">↗</span><div><span class="section-kicker">Importante sobre a rede local</span><h2>O desenho do fluxo depende do território.</h2><p>Hospitais de referência, pontos de entrada, centrais de regulação, serviços de reabilitação e critérios de encaminhamento podem variar entre regiões. A gestão municipal/estadual e os protocolos pactuados definem o percurso aplicável. Esta página é um mapa educativo geral, não um protocolo assistencial nem orientação clínica individual.</p></div></section>
+
+    <section class="sources-section section-wrap">
+      <div class="section-kicker">Referências oficiais</div>
+      <h2>Fontes para consulta</h2>
+      <p>Conteúdo sintetizado a partir de páginas e documentos públicos do Ministério da Saúde.</p>
+      <ol class="source-list">
+        <li><a href="https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/a/avc" target="_blank" rel="noopener noreferrer">Ministério da Saúde — Acidente Vascular Cerebral (AVC)</a><span>Sinais de alerta, resposta imediata, tratamento e reabilitação.</span></li>
+        <li><a href="https://www.gov.br/conitec/pt-br/midias/protocolos/pcdt-cuidados-avc.pdf/@@display-file/file" target="_blank" rel="noopener noreferrer">Ministério da Saúde / CONITEC — Linha de Cuidados em AVC na Rede de Atenção às Urgências e Emergências (PDF)</a><span>Componentes da rede, papel da Atenção Básica, regulação e continuidade do cuidado.</span></li>
+        <li><a href="https://www.gov.br/saude/pt-br/composicao/saes/samu-192/rau" target="_blank" rel="noopener noreferrer">Ministério da Saúde — Rede de Atenção às Urgências e Emergências</a><span>Integração entre Atenção Básica, SAMU, UPA, hospitais e atenção domiciliar.</span></li>
+        <li><a href="https://www.gov.br/saude/pt-br/assuntos/novo-pac-saude/centros-especializados-em-reabilitacao" target="_blank" rel="noopener noreferrer">Ministério da Saúde — Centros Especializados em Reabilitação (CER)</a><span>Papel do CER como ponto ambulatorial especializado de referência na rede.</span></li>
+      </ol>
+    </section>
+  </main>
+
+  <footer class="site-footer"><a class="brand footer-brand" href="index.html#inicio"><span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 48 48"><path d="M24 5 42 15v18L24 43 6 33V15L24 5Z"/><path d="M24 14v20M14 24h20M16.9 16.9l14.2 14.2m0-14.2L16.9 31.1"/></svg></span><span class="brand-name">neuro<span>conecta</span><small>cuidado em rede</small></span></a><p>Integração, continuidade e cuidado humanizado na jornada do AVC.</p><a href="#conteudo">Voltar ao topo ↑</a><div class="footer-line">Página informativa. Em suspeita de AVC, procure imediatamente o serviço de urgência ou ligue SAMU 192.</div></footer>
+</body>
+</html>

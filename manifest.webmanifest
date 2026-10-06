@@ -1,0 +1,28 @@
+{
+  "id": "./index.html",
+  "name": "NeuroConecta — cuidado em rede",
+  "short_name": "NeuroConecta",
+  "description": "Portal demonstrativo sobre integração da linha de cuidado do AVC no SUS.",
+  "lang": "pt-BR",
+  "start_url": "./index.html?source=app",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#f7f8f5",
+  "theme_color": "#143840",
+  "categories": ["health", "education"],
+  "icons": [
+    {
+      "src": "./icons/neuroconecta-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./icons/neuroconecta-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
